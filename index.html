@@ -16,7 +16,8 @@ body { margin:0; padding:0; }
 <script>
 var map = new mapboxgl.Map({
   container: 'map', style: 'https://hfu.github.io/amphitrite-style/style.json',
-  center: [130.4082, 33.5988], zoom: 14, attributionControl: true, hash: true
+  center: [130.4082, 33.5988], zoom: 14, attributionControl: true, hash: true, 
+  minZoom: 13, maxZoom: 22
 });
 map.addControl(new mapboxgl.NavigationControl());
 </script>
